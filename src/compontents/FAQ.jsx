@@ -26,7 +26,7 @@ const FAQ = () => {
     ]
   return (
     
-    <div className='px-24'>
+    <div className='px-4 md:px-24'>
         <h1 className='text-center fontr-bold text-[45px]'>
             Frequently Asked Questions
         </h1>

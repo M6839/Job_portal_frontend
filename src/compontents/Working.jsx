@@ -5,7 +5,7 @@ import { BiSolidLike } from "react-icons/bi";
 
 const Working = () => {
   return (
-    <section className="bg-[#8C52FF] min-h-screen">
+    <section className="bg-[#8C52FF] min-h-screen py-8">
       <h3 className='text-white text-[40px] font-bold text-center mb-12'>How does it work?</h3>
       <div className="flex flex-col gap-8">
         <div className="bg-white hover:-translate-y-4 mx-4 md:mx-8 p-4 rounded-2xl">

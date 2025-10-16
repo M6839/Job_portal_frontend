@@ -3,7 +3,7 @@ import React from 'react'
 const Hero = () => {
   return (
     <div className='text-white flex flex-col items-center justify-center min-h-screen'>
-         <h1 className='text-white text-center font-bold text-[40px] md:text-[70px] mt-24'>Find Your Dream Job Today</h1>
+         <h1 className='text-white text-center font-bold text-[40px] md:text-[70px] md:mt-24'>Find Your Dream Job Today</h1>
       <h4 className='text-white text-[28px] md:text-[32px] text-center m-8'>
         Connecting Talent with Opportunities Across the Nation for Every Skill
         Level

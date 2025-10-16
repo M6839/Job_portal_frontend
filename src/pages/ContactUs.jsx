@@ -17,7 +17,7 @@ const ContactUs = () => {
     <p>Office</p>
 </div>
         </div>
-          <div className='bg-black space-y-4 rounded-[10px] border border-gray-700 p-2 md:p-8'>
+          <div className='bg-black space-y-4 rounded-[10px] border border-gray-700 p-2 mt-8 md:mt-0 md:p-8'>
             <div><h1 className='text-center text-[#8C52FF] font-bold text-[32px]'>Contact Info</h1>
             <p className='text-center'>Nibh dis faucibus proin lacus tristique</p></div>
           <div className='flex gap-4'>

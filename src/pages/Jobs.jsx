@@ -74,7 +74,7 @@ const Jobs = () => {
         <h1 className='text-center font-bold text-[45px]'>Jobs</h1>
       </div>
       {/* <input type='text' placeholder='search jobs' className='px-4 border-2 mx-auto border-[#8C52FF] rounded-[10px] w-full md:w-[900px] h-[45px] bg-black mb-8'></input> */}
-      <p className='md:hidden mb-2' onClick={()=>setOpen(!open)}>Filter</p>
+      <p className='md:hidden mb-2 px-4' onClick={()=>setOpen(!open)}>Filter</p>
       <div className='flex justify-between gap-8 px-4 md:px-16'>
       <section className={`hidden md:block bg-[#8C52FF]  rounded-[12px] border-r-2 border-[#8C52FF] px-2`}>
       <h1 className='text-[20px] mb-4'>Filter by prefered location</h1>

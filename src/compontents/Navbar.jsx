@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import Profile from './Profile';
+import { IoClose } from "react-icons/io5";
+import { IoMenu } from "react-icons/io5";
 const Navbar = () => {
   const [profile,setProfile]=useState(false);
   const [openmenu,setOpenmenu]=useState(false);
@@ -28,14 +30,15 @@ const Navbar = () => {
       </div>
    }
         </div> */}
-      <h1 className='block md:hidden text-white' onClick={()=>setOpenmenu(!openmenu)}>Menu</h1>
-      
+    {openmenu ?  <IoClose className='block md:hidden text-white text-[28px] font-bold' onClick={()=>setOpenmenu(!openmenu)}/>:<IoMenu className='block md:hidden text-white text-[28px] font-bold' onClick={()=>setOpenmenu(!openmenu)}/>}
     </div>
-    {openmenu && <div className='absolute bg-black w-full py-4 px-4'>
-        <Link to='/'><p className='text-white hover:text-[#8C52FF] text-[20px] '>Home</p></Link>
-        <Link to='/jobs'><p className='text-white hover:text-[#8C52FF] text-[20px]'>Jobs</p></Link>
-        <Link to='/login'><p className='text-[#8C52FF]  text-[20px] '>Login</p></Link>
-         <Link to='/register'><p className='bg-[#8C52FF] text-white text-[20px] rounded-[10px] px-4 py-1'>Register</p></Link>
+    {openmenu && <div className='absolute bg-black w-full  py-4 px-4 space-y-6'>
+        <Link to='/'><p className='text-white hover:text-[#8C52FF] text-[24px] '>Home</p></Link>
+        <Link to='/jobs'><p className='text-white hover:text-[#8C52FF] text-[24px]'>Jobs</p></Link>
+         <Link to='/aboutUs'><p className='text-white hover:text-[#8C52FF] text-[24px]'>About US</p></Link>
+          <Link to='/contactUs'><p className='text-white hover:text-[#8C52FF] text-[24px]'>Contact US</p></Link> 
+        <Link to='/login'><p className='text-[#8C52FF]  text-[24px] '>Login</p></Link>
+         <Link to='/register'><p className='bg-[#8C52FF] text-white text-[24px] rounded-[10px] px-4 py-1 mt-2'>Register</p></Link>
       </div>
 }
    
