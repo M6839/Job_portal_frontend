@@ -1,9 +1,11 @@
 import React from 'react'
 import FAQ from '../compontents/FAQ'
-
+import Navbar from '../compontents/Navbar'
+import Footer from '../compontents/Footer'
 const AboutUs = () => {
   return (
     <div className='bg-black min-h-screen text-white'>
+      {/* <Navbar/> */}
         <div className='bg-[#8C52FF] flex items-center justify-center h-[300px] mb-16'>
         <h1 className='text-center font-bold text-[45px]'>About US</h1>
       </div>
@@ -31,6 +33,7 @@ With The Best</h1>
 </div>
         </div>
       </section>
+      <Footer/>
     </div>
   )
 }

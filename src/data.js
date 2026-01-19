@@ -1,0 +1,1 @@
+export const API_URI="https://jobprotalbackend-1we3.onrender.com"

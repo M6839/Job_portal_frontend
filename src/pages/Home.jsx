@@ -4,7 +4,6 @@ import TopOprotunities from '../compontents/TopOprotunities'
 import Working from '../compontents/Working'
 import Marquee from 'react-fast-marquee';
 import { FaGoogle } from "react-icons/fa";
-import { FaMeta } from "react-icons/fa6";
 import { CiFacebook } from "react-icons/ci";
 import { FaMicrosoft } from "react-icons/fa";
 import { SiTcs } from "react-icons/si";
@@ -13,6 +12,7 @@ import { SiInfosys } from "react-icons/si";
 import { SiNetflix } from "react-icons/si";
 import { SiWipro } from "react-icons/si";
 import { SiAccenture } from "react-icons/si";
+import Footer from '../compontents/Footer';
 const Home = () => {
   const companies=[{
     name:"Google",
@@ -52,19 +52,20 @@ const Home = () => {
   },]
   return (
      <div className='bg-black  text-white'>
+      {/* <Navbar/> */}
       <Hero/>
       <Marquee gradient={false} speed={50}>
        <div className='flex justify-between gap-8 md:gap-16'>
         {
           companies.map((item,idx)=>(
-              <div className='flex items-center gap-2'>{item.logo}<p className='text-[20px]'>{item.name}</p></div>
+              <div key={idx} className='flex items-center gap-2'>{item.logo}<p className='text-[20px]'>{item.name}</p></div>
           ))
         }
      </div>
     </Marquee>
       <TopOprotunities/>
       <Working/>
-
+      <Footer/>
     </div>
   )
 }

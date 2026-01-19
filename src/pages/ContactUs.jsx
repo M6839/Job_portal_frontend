@@ -1,8 +1,12 @@
 import React from 'react'
+import Button from '../compontents/ui/Button'
+import Navbar from '../compontents/Navbar'
+import Footer from '../compontents/Footer'
 
 const ContactUs = () => {
   return (
     <div className='min-h-screen bg-black text-white pb-12'>
+      {/* <Navbar/> */}
          <div className='bg-[#8C52FF] flex   justify-center items-center h-[300px] mb-16'>
         <h1 className='text-center font-bold text-[45px]'>Contact Us</h1>
       </div>
@@ -44,9 +48,11 @@ const ContactUs = () => {
             Meassage
             <textarea placeholder='Message' className='w-full h-[163px] p-2 bg-[#1E1E1E] rounded-[10px]'></textarea>
           </label>
-             <button className='bg-[#8C52FF] py-[10px] px-[10px] w-full md:w-[140px] rounded-[8px]'>Start a Free Trial</button>
+             {/* <button className='bg-[#8C52FF] py-[10px] px-[10px] w-full md:w-[140px] rounded-[8px]'>Start a Free Trial</button> */}
+             <Button>Submit</Button>
           </div>
       </section>
+      <Footer/>
     </div>
   )
 }
