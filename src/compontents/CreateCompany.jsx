@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
 import { toast } from 'react-toastify'
 import { API_URI } from '../data'
-const createCompany = () => {
+const CreateCompany = () => {
   const navigate = useNavigate();
   const [companyName, setCompanyName] = React.useState("");
   const [error, setError] = React.useState("");
@@ -62,4 +62,4 @@ const createCompany = () => {
   );
 };
 
-export default createCompany;
+export default CreateCompany;
